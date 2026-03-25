@@ -1,0 +1,46 @@
+# Airflow / Astro
+.git
+.env
+.DS_Store
+airflow_settings.yaml
+__pycache__/
+astro
+.venv
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+airflow.db
+
+
+# Python
+.venv/
+__pycache__/
+plugins/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.terraform.lock.hcl
+*.vars.tf
+crash.log
+
+# Airflow / Astro
+logs/
+airflow.db
+astro/
+
+# Data files
+*.parquet
+*.csv
+
+# Sample data
+!sample_data/
+!sample_data/*.csv
+!architecture_diagram.png

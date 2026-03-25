@@ -1,0 +1,5 @@
+resource_group_name = "your-resource-group"
+location            = "UK South"
+storage_account_name = "yourstorageaccount"
+db_admin_login      = "your_admin_login"
+db_admin_password   = "your_secure_password"
