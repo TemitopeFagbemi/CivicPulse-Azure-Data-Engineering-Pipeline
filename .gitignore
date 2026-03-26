@@ -30,6 +30,7 @@ plugins/
 *.terraform.lock.hcl
 *.vars.tf
 crash.log
+Terraform/providers/
 
 # Airflow / Astro
 logs/
