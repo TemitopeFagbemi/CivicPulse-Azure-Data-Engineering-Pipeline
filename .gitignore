@@ -1,47 +1,70 @@
-# Airflow / Astro
-.git
-.env
-.DS_Store
-airflow_settings.yaml
-__pycache__/
-astro
-.venv
-airflow-webserver.pid
-webserver_config.py
-airflow.cfg
-airflow.db
-
-
+# =========================
 # Python
+# =========================
 .venv/
+venv/
 __pycache__/
-plugins/
 *.pyc
 *.pyo
 *.pyd
+*.log
 
-# Environment variables
+# =========================
+# Environment / Secrets
+# =========================
 .env
+.env.*
+!.env.example
 
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.backup
-*.terraform.lock.hcl
-*.vars.tf
-crash.log
-Terraform/providers/
-
+# =========================
 # Airflow / Astro
-logs/
+# =========================
+airflow.cfg
 airflow.db
+airflow-webserver.pid
+webserver_config.py
+logs/
 astro/
 
-# Data files
+# Optional local-only Airflow config
+airflow_settings.yaml
+
+# =========================
+# Terraform
+# =========================
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Terraform downloaded providers / binaries
+Terraform/providers/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+desktop.ini
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Data files (local only)
+# =========================
 *.parquet
 *.csv
 
-# Sample data
+# Keep sample/demo data if needed
 !sample_data/
 !sample_data/*.csv
+
+# Keep architecture image if needed
 !architecture_diagram.png
