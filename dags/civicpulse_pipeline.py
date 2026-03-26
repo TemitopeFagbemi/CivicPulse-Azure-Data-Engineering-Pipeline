@@ -59,7 +59,7 @@ with DAG(
     )
 
     silver_to_pg_task = PythonOperator(
-        task_id="load_silver_to_postgres",
+        task_id="silver_to_postgres",
         python_callable=load_silver_postgres,
     )
 
